@@ -33,12 +33,12 @@ root.configure(bg="#F7AC40")
 
 engine = pyttsx3.init()
 
-logo_image= PhotoImage(file= r"C:\Users\goyal\Desktop\WhatsApp Image 2024-04-17 at 19.09.10-checkpoint.png")
+logo_image= PhotoImage(file= r"D:\python project\WhatsApp Image 2024-04-17 at 19.09.10-checkpoint.png")
 root.iconphoto(False,logo_image)
 
 upper_frame=Frame(root,bg="#14A7DD",width=1200,height=130)
 upper_frame.place(x=0,y=0)
-picture=PhotoImage(file=r"C:\Users\goyal\Pictures\icons8-text-100.png")
+picture=PhotoImage(file=r"D:\python project\icons8-text-100.png")
 Label(upper_frame,image=picture,bg="#14A7DD").place(x=150,y=20)
 
 Label(upper_frame, text="Text to Speech Converter", font="TimesNewroman 40 bold", bg="#14A7DD", fg='white'). place (x=250, y=35)
@@ -56,7 +56,7 @@ speed_box = Combobox (root, values = ['Fast', 'Medium', 'Slow'], font = "Robote 
 speed_box.place (x=540, y=400)
 speed_box.set('Medium')
 
-imageicon = PhotoImage (file = r"C:\Users\goyal\Pictures\icons8-play-button-48.png")
+imageicon = PhotoImage (file = r"D:\python project\icons8-play-button-48.png")
 btn = Button(root, text ="Play", compound= LEFT, image= imageicon, bg='white', width =130 ,font="arial 14 bold" , command=speak_now)
 btn.place(x=430, y=450)
 
